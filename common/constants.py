@@ -1,4 +1,3 @@
-
 # HTTP相关配置
 
 HTTP_HEADER = {
@@ -45,7 +44,6 @@ USER_AGENT_LIST = [
     "Opera/9.80 (Windows NT 5.1; U; zh-sg) Presto/2.9.181 Version/12.00",
     "Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36 360Browser"
 ]
-
 
 # JOB相关配置
 
@@ -125,10 +123,7 @@ INDUSTRY_DICT = {
     '非互联网行业': 28
 }
 
-
 # crawl相关配置
 HOME_URL = 'https://www.zhipin.com'
 MIN_SLEEP_TIME = 1
 MAX_SLEEP_TIME = 3
-
-

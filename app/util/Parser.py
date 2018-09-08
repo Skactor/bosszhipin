@@ -1,6 +1,7 @@
-from common import constants
 import time
 from copy import deepcopy
+
+from common import constants
 from .Decorator import parse_decorator
 
 

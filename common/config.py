@@ -23,15 +23,13 @@ crawled_job_des = RedisConnect(db=REDIS_CONF['crawled_job_des']).conn
 uncrawl_com = RedisConnect(db=REDIS_CONF['uncrawl_com']).conn
 crawled_com = RedisConnect(db=REDIS_CONF['crawled_com']).conn
 
-
 MYSQL_CONF = {
     'host': '127.0.0.1',
     'port': 3306,
     'username': 'root',
-    'password': 'root',
+    'password': '1q2w!Q@W',
     'db': 'boss'
 }
-
 
 PROXY_SERVER_URL = 'http://10.199.4.55:5000/'
 
@@ -41,7 +39,7 @@ class Config:
     SECRET_KEY = 'mybossprogram'
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     SQLALCHEMY_TRACK_MODIFICATIONS = True
-    SQLALCHEMY_DATABASE_URI = 'mysql://{}:{}@{}:{}/{}'.format(MYSQL_CONF['username'],MYSQL_CONF['password'], MYSQL_CONF['host'], MYSQL_CONF['port'], MYSQL_CONF['db'])
+    SQLALCHEMY_DATABASE_URI = 'mysql://{}:{}@{}:{}/{}'.format(MYSQL_CONF['username'], MYSQL_CONF['password'], MYSQL_CONF['host'], MYSQL_CONF['port'], MYSQL_CONF['db'])
 
 
 config = {

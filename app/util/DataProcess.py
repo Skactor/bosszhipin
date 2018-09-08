@@ -1,12 +1,11 @@
 import time
 
 from app import db
-from .Decorator import db_commit_decorator
-from app.model.job import Job
 from app.model.city import City
 from app.model.company import Company
+from app.model.job import Job
 from common.config import uncrawl_job_des, crawled_job_des, uncrawl_com, crawled_com, REDIS_CONF
-
+from .Decorator import db_commit_decorator
 
 
 class DataProcess(object):

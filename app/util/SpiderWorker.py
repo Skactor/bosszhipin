@@ -1,6 +1,6 @@
+from app.util.DataProcess import DataProcess
 from app.util.Downloader import HtmlDownloader
 from app.util.Parser import HtmlParser
-from app.util.DataProcess import DataProcess
 from common import constants
 
 
@@ -20,9 +20,8 @@ class SpiderWorker(object):
         data.update_job_main_content()
 
     def job_des_spider(self):
-
         job_id = DataProcess.get_uncrawl_job_des()
-        self.url = constants.HOME_URL+'/job_detail/'+job_id+'.html'
+        self.url = constants.HOME_URL + '/job_detail/' + job_id + '.html'
         self.parser.job_description_parser()
         self.parser.job_des['job_id'] = job_id
 
@@ -39,7 +38,7 @@ class SpiderWorker(object):
 
     def company_spider(self):
         com_id = DataProcess.get_uncrawled_com()
-        self.url = constants.HOME_URL+'/gongsi/'+com_id+'.html'
+        self.url = constants.HOME_URL + '/gongsi/' + com_id + '.html'
         self.parser.company_parser()
         self.parser.company['bosszhipin_companyid'] = com_id
 

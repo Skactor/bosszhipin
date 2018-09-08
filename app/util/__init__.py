@@ -1,6 +1,7 @@
 import random
-import requests
 from time import sleep
+
+import requests
 
 from common import constants, config
 
@@ -25,4 +26,3 @@ def delete_proxy(proxy):
 
 def crawl_sleep():
     sleep(random.uniform(constants.MIN_SLEEP_TIME, constants.MAX_SLEEP_TIME))
-

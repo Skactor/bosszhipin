@@ -1,8 +1,8 @@
-import os
 import logging
 import logging.config as log_conf
+import os
 
-log_dir = os.path.dirname(os.path.dirname(__file__))+'/logs'
+log_dir = os.path.dirname(os.path.dirname(__file__)) + '/logs'
 if not os.path.exists(log_dir):
     os.mkdir(log_dir)
 

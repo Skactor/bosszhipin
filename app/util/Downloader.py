@@ -31,5 +31,5 @@ class HtmlDownloader(object):
             crawler_log.info('when crawl {}, error is: {}'.format(self.url, e))
             delete_proxy(proxy)
             if retry < 10:
-                return self.make_request(retry=retry+1)
+                return self.make_request(retry=retry + 1)
             raise

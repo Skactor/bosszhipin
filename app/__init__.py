@@ -1,8 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+
 from common.config import config
-
-
 
 
 def create_app():

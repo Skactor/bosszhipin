@@ -1,5 +1,5 @@
-from ..util.SpiderWorker import SpiderWorker
 from ..task import celery_app
+from ..util.SpiderWorker import SpiderWorker
 
 
 @celery_app.task(ignore_result=True)
